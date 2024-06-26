@@ -4,3 +4,8 @@ Release.IsUpgrade = {{ .Release.IsUpgrade }}
 Release.IsInstall = {{ .Release.IsInstall }}
 Release.Revision  = {{ .Release.Revision }}
 Release.Service   = {{ .Release.Service }}
+
+Operator Name = {{ .Values.Name }}
+Operations = {{ .Values.Topic }}
+Operation time in ist = {{ .Values.Time.IST }}
+Operation time in cet = {{ .Values.Time.CET }}
