@@ -41,6 +41,12 @@ fruit in multicolour = {{ .Values.fruits.multicolour | default "water-melon" | q
 
 {{ printf "%s-shake" .Values.fruits.yellow | quote }}
 
-##
+## This will work with when we run helm chart we cant observer this on --dry-run
 {{ (lookup "v1" "Pod" "kube-system" "coredns-586b798467-7hb7n").kind }}
+
+
+{{ ne 100 100 }}
+{{ and ( ne 102 100 ) ( ne 101 100 ) }}
+{{ or ( ne 100 100 ) ( ne 101 100 ) }}
+
 
