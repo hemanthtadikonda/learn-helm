@@ -9,3 +9,13 @@ Operator Name = {{ .Values.Name }}
 Operations = {{ .Values.Topic }}
 Operation time in ist = {{ .Values.Time.IST }}
 Operation time in cet = {{ .Values.Time.CET }}
+Mobile Number 1 = {{ index .Values.Mobile 0 }}
+Mobile Number 2 = {{ index .Values.Mobile 2 }}
+
+Chart Name = {{ .Chart.Name }}
+Chart Version = {{ .Chart.Version }}
+
+Capabilities.APIVersions = {{ .Capabilities.APIVersions }}
+{{ .Capabilities.KubeVersion.Major }}-{{ .Capabilities.KubeVersion.Minor }}
+{{ .Capabilities.HelmVersion.GitCommit }}
+{{ .Capabilities.HelmVersion.GoVersion }}
