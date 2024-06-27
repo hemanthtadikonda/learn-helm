@@ -115,3 +115,9 @@ Time:
 Mobile:
    - 999
    - 888
+
+
+fruits:
+   green: mango
+   yellow: banana
+   black: grape

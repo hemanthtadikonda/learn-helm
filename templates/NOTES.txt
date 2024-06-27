@@ -19,3 +19,9 @@ Capabilities.APIVersions = {{ .Capabilities.APIVersions }}
 {{ .Capabilities.KubeVersion.Major }}-{{ .Capabilities.KubeVersion.Minor }}
 {{ .Capabilities.HelmVersion.GitCommit }}
 {{ .Capabilities.HelmVersion.GoVersion }}
+
+Template.Name  = {{ .Template.Name }}
+Template.BasePath = {{ .Template.BasePath }}
+
+fruit in yellow = {{ .Values.fruits.yellow | quote }}
+fruit in black = {{ quote .Values.fruits.black }}
