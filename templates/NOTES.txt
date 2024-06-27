@@ -37,5 +37,8 @@ fruit in yellow = {{ .Values.fruits.yellow | upper | quote | indent 4 }}
 fruit in black = {{ .Values.fruits.black | repeat 5 }}
 fruit in black = {{ .Values.fruits.black | repeat 5 | quote }}
 
-fruit in multicolour = {{ .Values.fruits.multicolour | default "water-melon" }}
+fruit in multicolour = {{ .Values.fruits.multicolour | default "water-melon" | quote }}
+
+{{ printf "%s-shake" ..Values.fruits.yellow | quote }}
+
 
