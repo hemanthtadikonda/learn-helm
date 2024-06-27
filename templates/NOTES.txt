@@ -25,3 +25,12 @@ Template.BasePath = {{ .Template.BasePath }}
 
 fruit in yellow = {{ .Values.fruits.yellow | quote }}
 fruit in black = {{ quote .Values.fruits.black }}
+fruit in green = {{ .Values.fruits.green }}
+
+
+fruit in green = {{ .Values.fruits.green }}
+fruit in green = {{ .Values.fruits.green  | indent 6}}
+
+fruit in yellow = {{ .Values.fruits.yellow | upper | quote }}
+fruit in yellow = {{ .Values.fruits.yellow | upper | quote | indent 6 }}
+
