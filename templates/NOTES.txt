@@ -32,5 +32,8 @@ fruit in green = {{ .Values.fruits.green }}
 fruit in green = {{ .Values.fruits.green  | indent 6}}
 
 fruit in yellow = {{ .Values.fruits.yellow | upper | quote }}
-fruit in yellow = {{ .Values.fruits.yellow | upper | quote | indent 6 }}
+fruit in yellow = {{ .Values.fruits.yellow | upper | quote | indent 4 }}
+
+fruit in black = {{ .Values.fruits.black | repeat 5 }}
+fruit in black = {{ .Values.fruits.black | repeat 5 | quote }}
 
