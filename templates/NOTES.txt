@@ -47,6 +47,6 @@ fruit in multicolour = {{ .Values.fruits.multicolour | default "water-melon" | q
 
 {{ ne 100 100 }}
 {{ and ( ne 102 100 ) ( ne 101 100 ) }}
-{{ or ( ne 100 100 ) ( ne 101 100 ) }}
+{{ or ( ne 100 100 ) ( ne 100 100 ) }}
 
 
