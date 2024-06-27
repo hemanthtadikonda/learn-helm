@@ -42,5 +42,5 @@ fruit in multicolour = {{ .Values.fruits.multicolour | default "water-melon" | q
 {{ printf "%s-shake" .Values.fruits.yellow | quote }}
 
 ##
-{{ (lookup "v1" "Pod" "kube-system" "coredns-586b798467-7hb7n").apiVersion }}
+{{ (lookup "v1" "Pod" "kube-system" "coredns-586b798467-7hb7n").status.hostIP }}
 
