@@ -51,5 +51,6 @@ fruit in multicolour = {{ .Values.fruits.multicolour | default "water-melon" | q
 
 
 Image = {{ .Values.Name1 }}
+serviceAccountName: {{ .Values.serviceAccountName }}
 
 
