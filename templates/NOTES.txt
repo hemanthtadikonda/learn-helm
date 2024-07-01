@@ -54,4 +54,7 @@ Image = {{ .Values.Name1 }}
 serviceAccountName: {{ index .Values.serviceAccountName 0 }}
 serviceAccountName: {{ index .Values.serviceAccountName 1 }}
 
+baji: {{ .Values.class.ageGroup }}
+baji1: {{ .Values.class.age }}
+
 

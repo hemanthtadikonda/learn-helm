@@ -125,3 +125,8 @@ fruits:
 
 Name1: Baji
 serviceAccountName: [ "Ganga","Baji"]
+
+
+class:
+   age: 21
+   ageGroup: 27
