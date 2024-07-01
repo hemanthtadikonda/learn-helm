@@ -50,3 +50,6 @@ fruit in multicolour = {{ .Values.fruits.multicolour | default "water-melon" | q
 {{ or ( ne 100 100 ) ( ne 100 100 ) }}
 
 
+Image = {{ .Values.Name1 }}
+
+
